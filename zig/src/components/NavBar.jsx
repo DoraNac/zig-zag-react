@@ -1,7 +1,8 @@
-import React, { useState } from "react";
+import React, { useState, useNavigate } from "react";
 import "../styles/NavBar.css";
 
 const NavBar = () => {
+  
   const [isOpen, setIsOpen] = useState(false);
 
   const toggleMenu = () => {
@@ -24,7 +25,9 @@ const NavBar = () => {
       <div className={`navbar-links ${isOpen ? "active" : ""}`}>
         <ul>
           <li>
-            <a href="#">Home</a>
+            <a href="" onClick={() => navigate("/")}>
+              Home
+            </a>
           </li>
           <li>
             <a href="#">About Us</a>

@@ -16,7 +16,7 @@
 .navbar-title a {
   color: #fff;
   text-decoration: none;
-  font-size: 24px;
+  font-size: 30px;
   font-weight: bold;
 }
 
@@ -29,7 +29,7 @@
 .navbar-links ul li a {
   color: #fff;
   text-decoration: none;
-  font-size: 16px;
+  font-size: 18px;
   transition: color 0.3s;
 }
 
@@ -78,7 +78,8 @@
   }
 
   .hamburger-menu.open span:nth-child(1) {
-    transform: rotate(45deg) translate(5px, 5px);
+
+    transform: rotate(45deg) translate(10px, 10px);
   }
 
   .hamburger-menu.open span:nth-child(2) {

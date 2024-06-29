@@ -1,6 +1,6 @@
 * {
   margin: 0;
-  padding: 0;
+
   box-sizing: border-box;
   font-family: "BANNER", sans-serif;
   color: #2c2c2c;
@@ -9,8 +9,10 @@
 .container {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  padding-top: 10px;
-  background-color: #4a4a4a;
+  padding-top: 20px;
+  padding-left: 70px;
+  padding-right: 70px;
+  background-color: #d3cbc4;
 }
 
 .col {
@@ -18,9 +20,9 @@
   justify-content: center;
   align-items: center;
   height: 400px;
-  background-color: #dfdad6;
-  overflow: hidden;
-  border-bottom: 5px solid #4a4a4a;
+  background-color: #d3cbc4;
+
+  border-bottom: 3px solid #4a4a4a;
 }
 
 .col img {
@@ -35,12 +37,20 @@
   text-align: center;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 800px) {
   .container {
     grid-template-columns: 1fr;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .text {
+    font-size: 15px;
   }
 
   .col {
+    width: 100%;
     height: auto;
     flex-direction: column;
   }

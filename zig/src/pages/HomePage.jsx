@@ -2,21 +2,19 @@ import React from "react";
 import "../styles/HomePage.css";
 
 const images = [
-  "https://images.lifestyleasia.com/wp-content/uploads/sites/3/2022/04/07111030/tijs-van-leur-Qnlp3FCO2vc-unsplash-scaled.jpg",
-  "https://s3-ap-southeast-2.amazonaws.com/ish-oncourse-scc/85edf77e-03d4-4d37-8171-130776d6d4d2?versionId=CyqL4UCaGm9Ld.YzcsTqQah7LpCs.E2m",
-  "https://liquidcapitalcorp.com/wp-content/uploads/2018/04/Prepare-for-a-conference.jpg",
-  "https://static01.nyt.com/images/2017/09/20/business/21ebiz1/21ebiz1-superJumbo.jpg",
-  "https://www.loghicconnect.com.au/wp-content/uploads/2020/05/Untitled-design-2023-03-16T112342.403.jpg",
-  "https://www.johntalk.com/wp-content/uploads/2018/06/The-Benefits-of-Working-Music-Festivals.jpg",
-  "https://www.nevadaart.org/wp-content/uploads/2018/11/2018_GalleryShot_AlteredLandscape1.jpg",
-  "https://www.walksinsiderome.com/wp-content/uploads/2023/01/italian-cooking-class-in-rome.jpg",
+  "https://cdn.pixabay.com/photo/2023/03/16/16/49/watercolor-7857103_960_720.png",
+  "https://cdn.pixabay.com/photo/2020/10/23/05/23/leaves-5677718_960_720.png",
+  "https://cdn.pixabay.com/photo/2020/10/23/05/23/leaves-5677717_960_720.png",
+  "https://cdn.pixabay.com/photo/2023/01/26/18/11/leaves-7746730_960_720.png",
+  "https://cdn.pixabay.com/photo/2020/12/16/03/40/leaves-5835593_960_720.png",
+  "https://cdn.pixabay.com/photo/2020/10/21/04/01/leaves-5672036_960_720.png",
 ];
 
 const texts = [
   "Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?",
-  "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-  "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.",
-  "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. ",
+  "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.",
+  "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore.",
+  "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias   ",
   "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
   " Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. ",
 ];
@@ -29,11 +27,15 @@ const HomePage = () => {
           {index % 2 === 0 ? (
             <>
               <div className="col text">{texts[index]}</div>
-              <div className="col"><img src={image} alt={`Image ${index + 1}`} /></div>
+              <div className="col">
+                <img src={image} alt={`Image ${index + 1}`} />
+              </div>
             </>
           ) : (
             <>
-              <div className="col"><img src={image} alt={`Image ${index + 1}`} /></div>
+              <div className="col">
+                <img src={image} alt={`Image ${index + 1}`} />
+              </div>
               <div className="col text">{texts[index]}</div>
             </>
           )}

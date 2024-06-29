@@ -3,31 +3,30 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "BANNER", sans-serif;
+  color: #2c2c2c;
 }
 
 .container {
   display: grid;
   grid-template-columns: 1fr 1fr;
-
-  gap: 8px;
-  width: 100vw;
-  min-height: 100vh;
-  padding: 8px;
+  padding-top: 10px;
+  background-color: #4a4a4a;
 }
 
 .col {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #f0f0f0;
+  height: 400px;
+  background-color: #dfdad6;
   overflow: hidden;
+  border-bottom: 5px solid #4a4a4a;
 }
 
 .col img {
-  max-width: 100%;
-  max-height: 100%;
+  max-width: 90%;
+  max-height: 90%;
   object-fit: cover;
-  border-radius: 10px;
 }
 
 .text {
@@ -42,6 +41,7 @@
   }
 
   .col {
+    height: auto;
     flex-direction: column;
   }
 }

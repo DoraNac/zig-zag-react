@@ -8,8 +8,8 @@ function App() {
   return (
     <>
       <Router>
-        <NavBar/>
-        <Hero/>
+        <NavBar />
+        <Hero />
         <Routes>
           <Route path="/" element={<HomePage />} />
         </Routes>

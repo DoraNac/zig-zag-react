@@ -51,7 +51,6 @@
   transition: 0.3s;
 }
 
-/* Mobile Responsive Styles */
 @media (max-width: 768px) {
   .navbar-links ul {
     flex-direction: column;
@@ -71,7 +70,7 @@
 
   .navbar-links ul li {
     padding: 15px 0;
-    text-align: center;
+    text-align: right;
   }
 
   .hamburger-menu {

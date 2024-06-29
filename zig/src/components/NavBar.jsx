@@ -13,7 +13,10 @@ const NavBar = () => {
       <div className="navbar-title">
         <a href="#">Lorem Ipsum</a>
       </div>
-      <div className={`hamburger-menu ${isOpen ? "open" : ""}`} onClick={toggleMenu}>
+      <div
+        className={`hamburger-menu ${isOpen ? "open" : ""}`}
+        onClick={toggleMenu}
+      >
         <span></span>
         <span></span>
         <span></span>
